@@ -40,6 +40,7 @@ function Hrm() {
     const closeModal = () => {
         setIsModalOpen(false);
     };
+
     const openVacationModal = (empId) => {
         setSelectedEmpId(empId);
         setIsVacationModalOpen(true);

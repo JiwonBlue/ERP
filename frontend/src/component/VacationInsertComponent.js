@@ -241,7 +241,7 @@ function VacationInsertComponent({isOpen, closeModal, empId}) {
                                             <input
                                                 type="text"
                                                 name="usedCount"
-                                                value={usedCount+1}
+                                                value={usedCount}
                                                 readOnly
                                             />
                                         </div>
