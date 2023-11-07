@@ -68,6 +68,11 @@ public class EmpController {
         return ResponseEntity.ok(empService.searchAllList());
     }
 
+    @GetMapping("/emp/emp-list")//인사관리 리스트
+    public ResponseEntity<List<EmpHrmListResponse>> empList() {
+        return ResponseEntity.ok(empService.searchAllList());
+    }
+
     @GetMapping("/emp/hrm/{id}")//인사관리 한명보기
     public ResponseEntity<EmpReshuffleResponse> detailReshuffle(@PathVariable("id") Long id) {
         EmpReshuffleResponse response = empService.reshuffleResponse(id);

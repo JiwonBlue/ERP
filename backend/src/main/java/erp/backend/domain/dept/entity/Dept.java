@@ -19,6 +19,4 @@ public class Dept {
     @Column(name = "DEPT_NAME")
     private String deptName;
 
-    @OneToMany(mappedBy = "dept")
-    private List<Emp> employees;
 }

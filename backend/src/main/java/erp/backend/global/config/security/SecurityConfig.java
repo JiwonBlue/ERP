@@ -74,7 +74,8 @@ public class SecurityConfig {
                                 "/api/message/test/{messageId}",
                                 "/api/file/{uuid}",
                                 "/api/vacation",
-                                "/api/sign-up"
+                                "/api/sign-up",
+                                "/api/emp-list"
                         )
                         .permitAll()
                         .requestMatchers(
