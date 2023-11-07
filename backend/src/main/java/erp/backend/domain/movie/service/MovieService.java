@@ -46,7 +46,6 @@ public class MovieService {
             String match = "[\"]";
 
             LocalDate releaseDate = LocalDate.parse(contents.get("release_date").toString().replaceAll(match, ""));
-            System.out.println(releaseDate);
 
             movieRepository.save(
                     Movie.builder()
@@ -59,8 +58,6 @@ public class MovieService {
                             .movieOverView(contents.get("overview").toString())
                             .build()
             );
-            System.out.println("$$$$$$$$$" + contents.get("id").toString());
-            System.out.println("$$$$$$$$$" + contents.get("title").toString());
         }
         return "ok";
     }
