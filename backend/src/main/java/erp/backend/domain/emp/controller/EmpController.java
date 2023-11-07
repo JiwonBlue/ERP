@@ -68,7 +68,7 @@ public class EmpController {
         return ResponseEntity.ok(empService.searchAllList());
     }
 
-    @GetMapping("/emp/emp-list")//인사관리 리스트
+    @GetMapping("/emp-list")//인사관리 리스트
     public ResponseEntity<List<EmpHrmListResponse>> empList() {
         return ResponseEntity.ok(empService.searchAllList());
     }

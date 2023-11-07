@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { selectHrmListApi,insertMessageApi } from '../api/Message';
+import {selectEmpList, insertMessageApi} from '../api/Message';
 import {useNavigate} from 'react-router-dom';
 import {useForm} from 'react-hook-form';
 
@@ -28,7 +28,7 @@ function MessageSend() {
         // 데이터를 가져오는 비동기 함수를 정의
         const fetchData = async () => {
             try {
-                const data = await selectHrmListApi();
+                const data = await selectEmpList();
                 setList(data);
             } catch (error) {
                 console.error('데이터 가져오기 오류:', error);

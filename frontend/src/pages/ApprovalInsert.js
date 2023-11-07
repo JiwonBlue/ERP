@@ -2,7 +2,7 @@ import React, {useEffect, useRef, useState} from 'react';
 import Editor from '../component/Editor';
 import {approvalInsert} from '../api/Approval';
 import {useNavigate} from 'react-router-dom';
-import {selectHrmListApi} from "../api/Message";
+import {selectEmpList} from "../api/Message";
 
 function ApprovalInsert() {
     const [subject, setSubject] = useState('');
@@ -17,7 +17,7 @@ function ApprovalInsert() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const data = await selectHrmListApi();
+                const data = await selectEmpList();
                 setList(data);
             } catch (error) {
                 console.error('데이터 가져오기 오류:', error);
