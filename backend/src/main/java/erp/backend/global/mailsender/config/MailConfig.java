@@ -9,7 +9,6 @@ import java.util.Properties;
 
 @Configuration
 public class MailConfig {
-
     @Bean
     public JavaMailSender NaverMailService() {
         JavaMailSenderImpl javaMailSender = new JavaMailSenderImpl();
@@ -25,7 +24,6 @@ public class MailConfig {
 
     // 메일 인증서버 정보 가져오기
     private Properties getMailProperties() {
-
         Properties properties = new Properties();
         properties.setProperty("mail.transport.protocol", "smtp"); // 프로토콜 설정
         properties.setProperty("mail.smtp.auth", "true"); // smtp 인증

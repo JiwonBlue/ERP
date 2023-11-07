@@ -57,7 +57,6 @@ function VacationInsertComponent({isOpen, closeModal, empId}) {
             setStartdate(null);
             setEnddate(null);
         } else {
-            endDate.setHours(23, 59, 59, 59)
             const dayOffDifference = calculateDayDifference(startdate1, enddate1);
             const totalVacation = parseInt(detail.vacationTotalVacation, 10);
             const totalDayOff = parseInt(detail.vacationTotalDayOff, 10);
@@ -152,7 +151,7 @@ function VacationInsertComponent({isOpen, closeModal, empId}) {
                         <div className="d-flex justify-content-end align-items-center"
                              style={{height: '100%', width: '63%'}}>
                             <button className="btn btn-primary" data-bss-hover-animate="pulse" type="button" style={{
-                                background: 'url("assets/img/icons8-취소하다-500.png") center / contain no-repeat',
+                                background: 'url("assets/img/취소.png") center / contain no-repeat',
                                 width: '38px',
                                 height: '37px',
                                 borderStyle: 'none'

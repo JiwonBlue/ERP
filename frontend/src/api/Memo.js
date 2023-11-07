@@ -11,7 +11,7 @@ export const selectMemoApi = async (params) => {
 
 export const insertMemoApi = async (params) => {
     return new Promise((resolve,reject)=> {
-        axios.post('/api/memo', params)
+        axios.put('/api/memo', params)
         .then((res)=>{
             return resolve(res);
         })

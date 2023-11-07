@@ -9,10 +9,8 @@ import java.time.LocalDate;
 @Getter
 @Setter
 public class EmpReshuffleRequest {
-
     private Dept empDeptId;
     private String empPosition;
     private LocalDate empEndDate;
     private String empStatus;
-
 }

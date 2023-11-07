@@ -61,7 +61,8 @@ function Hrm() {
                 const data = await selectHrmListApi();
                 setHrm(data);
             } catch (error) {
-                console.error('Error fetching data:', error);
+                navigate('/main');
+                alert("권한이 없습니다");
             }
         }
 

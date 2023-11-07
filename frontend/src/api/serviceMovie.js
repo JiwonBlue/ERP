@@ -5,7 +5,8 @@ export const fetchServiceMovieList = async (page) => {
         const response = await axios.get(`/api/serviceMovie?page=${page}`);
         return response.data;
     } catch (error) {
-        throw error;
+        alert("권한이 없습니다."); // 에러 메시지를 보여줌
+        window.location.href = '/main'; // 메인 페이지로 이동
     }
 };
 

@@ -1,9 +1,13 @@
 package erp.backend.domain.dept.entity;
 
+import erp.backend.domain.emp.entity.Emp;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import lombok.Getter;
+
+import java.util.List;
 
 @Entity
 @Getter
@@ -14,4 +18,7 @@ public class Dept {
 
     @Column(name = "DEPT_NAME")
     private String deptName;
+
+    @OneToMany(mappedBy = "dept")
+    private List<Emp> employees;
 }
