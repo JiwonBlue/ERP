@@ -4,11 +4,11 @@
 - - - 
 
 # 📋 목차 
-### 1. [프로젝트 설명](https://github.com/JiwonBlue/Final-Project#rocket-프로젝트-설명 "프로젝트설명")                  
-### 2. [개발기간](https://github.com/JiwonBlue/Final-Project#-개발-기간 "개발기간")         
-### 3. [데이터베이스(DB) 설계](https://github.com/JiwonBlue/Final-Project#-데이터베이스db-설계 "db설계")         
-### 4. [사용기술](https://github.com/JiwonBlue/Final-Project#%EF%B8%8F-languages-and-tools "사용기술")         
-### 5. [기능소개](https://github.com/JiwonBlue/Final-Project#-기능소개 "기능소개")         
+### 1. [프로젝트 설명](https://github.com/JiwonBlue/erp#rocket-프로젝트-설명 "프로젝트설명")                  
+### 2. [개발기간](https://github.com/JiwonBlue/erp#-개발-기간 "개발기간")         
+### 3. [데이터베이스(DB) 설계](https://github.com/JiwonBlue/erp#-데이터베이스db-설계 "db설계")         
+### 4. [사용기술](https://github.com/JiwonBlue/erp#%EF%B8%8F-languages-and-tools "사용기술")         
+### 5. [기능소개](https://github.com/JiwonBlue/erp#-기능소개 "기능소개")         
 
 - - - 
 
